@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/layout_width"
+    android:layout_height="fill_parent">
+<EditText id="@+id/et_led"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+	android:textAlign="end"
+	android:digits="1234567890."
+	android:cursorVisible="false"
+	android:maxLength="15"
+    android:text="0"/>
+
+<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<TextView id="@+id/tv_tmp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="MEM = "/>
+	<TextView id="@+id/tv_mem"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toRight="@id/tv_tmp"
+		android:text="0"/>
+</RelativeLayout>
+
+<RelativeLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content">
+	<Button id="@+id/btn_bksp"
+		android:layout_width="@dimen/btn_con_length"
+		android:layout_height="wrap_content"
+		android:layout_marginLeft="@dimen/btn_con_marginLeft"
+		android:text="Bksp"/>
+	<Button id="@+id/btn_ce"
+		android:layout_width="@dimen/btn_con_length"
+		android:layout_height="wrap_content"
+		android:layout_toRight="@id/btn_bksp"
+		android:layout_alignTop="@id/btn_bksp"
+		android:text="CE"/>
+	<Button id="@+id/btn_c"
+		android:layout_width="@dimen/btn_con_length"
+		android:layout_height="wrap_content"
+		android:layout_toRight="@id/btn_ce"
+		android:layout_alignTop="@id/btn_ce"
+		android:text="C"/>
+</RelativeLayout>
+
+<TableLayout
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:stretchColumns="true">
+	<TableRow
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:layout_span="5">
+
+		<Button id="@+id/btn_7"
+			android:width="@dimen/btn_length"
+			android:text="7"/>
+		<Button id="@+id/btn_8"
+			android:width="@dimen/btn_length"
+			android:text="8"/>
+		<Button id="@+id/btn_9"
+			android:width="@dimen/btn_length"
+			android:text="9"/>
+		<Button id="@+id/btn_div"
+			android:width="@dimen/btn_length"
+			android:text="/"/>
+		<Button id="@+id/btn_xm"
+			android:width="@dimen/btn_length"
+			android:text="X-M"/>
+	</TableRow>
+
+	<TableRow
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:layout_span="5">
+		<Button id="@+id/btn_4"
+			android:width="@dimen/btn_length"
+			android:text="4"/>
+		<Button id="@+id/btn_5"
+			android:width="@dimen/btn_length"
+			android:text="5"/>
+		<Button id="@+id/btn_6"
+			android:width="@dimen/btn_length"
+			android:text="6"/>
+		<Button id="@+id/btn_mul"
+			android:width="@dimen/btn_length"
+			android:text="*"/>
+		<Button id="@+id/btn_rm"
+			android:width="@dimen/btn_length"
+			android:text="RM"/>
+	</TableRow>
+
+	<TableRow
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:layout_span="5">
+		<Button id="@+id/btn_1"
+			android:width="@dimen/btn_length"
+			android:text="1"/>
+		<Button id="@+id/btn_2"
+			android:width="@dimen/btn_length"
+			android:text="2"/>
+		<Button id="@+id/btn_3"
+			android:width="@dimen/btn_length"
+			android:text="3"/>
+		<Button id="@+id/btn_sub"
+			android:width="@dimen/btn_length"
+			android:text="-"/>
+		<Button id="@+id/btn_mc"
+			android:width="@dimen/btn_length"
+			android:text="MC"/>
+	</TableRow>
+
+	<TableRow
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:layout_span="5">
+		<Button id="@+id/btn_0"
+			android:width="@dimen/btn_length"
+			android:text="0"/>
+		<Button id="@+id/btn_pm"
+			android:width="@dimen/btn_length"
+			android:text="+/-"/>
+		<Button id="@+id/btn_dot"
+			android:width="@dimen/btn_length"
+			android:text="."/>
+		<Button id="@+id/btn_plus"
+			android:width="@dimen/btn_length"
+			android:text="+"/>
+		<Button id="@+id/btn_equal"
+			android:width="@dimen/btn_length"
+			android:text="="/>
+	</TableRow>
+</TableLayout>
+</LinearLayout>
